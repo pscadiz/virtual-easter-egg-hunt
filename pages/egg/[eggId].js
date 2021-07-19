@@ -69,7 +69,7 @@ export default function GetTheEggPage({ link }) {
       <>
         <Header />
         <div className='flex flex-col items-center justify-center space-y-6 full-screen layout'>
-          <h2>You have not logged in yet!</h2>
+          <h2>You are not logged in</h2>
         </div>
       </>
     );

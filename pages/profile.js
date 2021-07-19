@@ -12,7 +12,7 @@ export default function profile() {
       <Header />
       <div className='flex flex-col items-center pt-5 space-y-2 full-screen'>
         <h3>Hi, {user?.name}</h3>
-        <h3>You got : {data?.length} eggs</h3>
+        <h3>You have : {data?.length} eggs</h3>
         <button onClick={signout} className='btn'>
           Sign out
         </button>

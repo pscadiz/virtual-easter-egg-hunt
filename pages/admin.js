@@ -46,7 +46,7 @@ export default function admin() {
   if (!user) {
     return (
       <div className='flex flex-col items-center justify-center h-screen space-y-5'>
-        You are not login
+        You are not logged in
       </div>
     );
   }
@@ -59,9 +59,9 @@ export default function admin() {
           value={linkTotal}
           className='w-20 px-2 border-2 border-gray-700 rounded-md'
           onChange={(e) => setLinkTotal(e.target.value)}
-        />
+        /> eggs
         <button className='btn' onClick={buttonHandler}>
-          Create link
+          Create eggs
         </button>
         <button className='btn' onClick={buttonStartGameHandler}>
           Start Game
@@ -73,7 +73,7 @@ export default function admin() {
           Reset Game
         </button>
       </div>
-      <div>Game is {gameData?.start ? 'Start' : 'End'}</div>
+      <div>Game {gameData?.start ? 'active' : 'inactive'}</div>
       <table className='border-2 border-collapse border-black table-auto'>
         <thead>
           <tr>
