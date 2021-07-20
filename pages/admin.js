@@ -69,9 +69,9 @@ export default function admin() {
         <button className='btn' onClick={buttonEndGameHandler}>
           End Game
         </button>
-        {/* <button className='btn' onClick={resetGame}>
+        <button className='btn' onClick={resetGame}>
           Reset Game
-        </button> */}
+        </button>
       </div>
       <div>Game {gameData?.start ? 'active' : 'inactive'}</div>
       <table className='border-2 border-collapse border-black table-auto'>
